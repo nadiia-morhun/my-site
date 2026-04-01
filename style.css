@@ -77,6 +77,11 @@ header {
     display: block;
 }
 
+.dropdown:hover .dropdown-menu,
+.dropdown-menu:hover {
+    display: block;
+}
+
 main {
     display: grid;
     grid-template-columns: 3fr 1fr;
@@ -190,3 +195,4 @@ article {
 article:hover {
     opacity: 1;
 }
+
