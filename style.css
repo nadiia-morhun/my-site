@@ -175,3 +175,7 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+
+body {
+    background: blue !important;
+}
