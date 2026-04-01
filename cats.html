@@ -13,15 +13,26 @@
         <h1>🐱 Мої коти</h1>
     </header>
 
-    <nav>
-        <a href="index.html">Головна</a>
-        <a href="cats.html">Коти</a>
-        <a href="contact.html">Контакти</a>
-    </nav>
+<nav class="navbar">
+    <ul class="menu">
+        <li><a href="index.html">Головна</a></li>
+
+        <li class="dropdown">
+            <a href="#">Коти ▾</a>
+            <ul class="dropdown-menu">
+                <li><a href="cats.html">Всі коти</a></li>
+                <li><a href="cats.html#bob">Боб</a></li>
+                <li><a href="cats.html#bloshka">Блошка</a></li>
+            </ul>
+        </li>
+
+        <li><a href="contact.html">Контакти</a></li>
+    </ul>
+</nav>
 
     <main>
 
-        <article>
+        <article id="bob">
             <h2>Боб</h2>
             <img src="images/bob.jpg" alt="Боб">
             <p><b>Порода:</b> Мейн-кун</p>
@@ -65,7 +76,7 @@
     </div>
 </section>
 
-        <article>
+        <article id="bloshka">
             <h2>Блошка</h2>
             <img src="images/boshka.jpg" alt="Блошка">
             <p><b>Порода:</b> дворняжка</p>
@@ -132,15 +143,28 @@
     </tr>
 </table>
 
+<section>
+    <h2>🎬 Відео та аудіо</h2>
+
+    <!-- Відео з елементами управління -->
+    <video controls width="600">
+        <source src="video/bobandbloshka.mp4" type="video/mp4">
+        Ваш браузер не підтримує відео.
+    </video>
+
+    <br><br>
+
+    <!-- Аудіо з елементами управління -->
+    <audio controls>
+        <source src="audio/myaukan-e-pesnya-koshek.mp3" type="audio/mpeg">
+        Ваш браузер не підтримує аудіо.
+    </audio>
+</section>
+
     </main>
 
     <footer>
         <p>© 2026 Мої коти</p>
-    </footer>
-
-</body>
-
-</html>
     </footer>
 
 </body>

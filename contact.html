@@ -13,26 +13,48 @@
         <h1>📩 Контакти</h1>
     </header>
 
-    <nav>
-        <a href="index.html">Головна</a>
-        <a href="cats.html">Коти</a>
-        <a href="contact.html">Контакти</a>
-    </nav>
+<nav class="navbar">
+    <ul class="menu">
+        <li><a href="index.html">Головна</a></li>
+
+        <li class="dropdown">
+            <a href="#">Коти ▾</a>
+            <ul class="dropdown-menu">
+                <li><a href="cats.html">Всі коти</a></li>
+                <li><a href="cats.html#bob">Боб</a></li>
+                <li><a href="cats.html#bloshka">Блошка</a></li>
+            </ul>
+        </li>
+
+        <li><a href="contact.html">Контакти</a></li>
+    </ul>
+</nav>
 
     <main>
-        <h2>Зв'язок</h2>
-
+        <h2>📩 Зв'язок</h2>
+    
         <form>
+    
             <label>Ім'я:</label>
             <input type="text" required>
-
+    
             <label>Email:</label>
             <input type="email" required>
-
+    
+            <label>Телефон:</label>
+            <input type="tel" required pattern="[0-9+]{10,15}">
+    
+            <label>URL:</label>
+            <input type="url">
+    
+            <label>Дата і час:</label>
+            <input type="datetime-local">
+    
             <label>Повідомлення:</label>
             <textarea maxlength="300" required></textarea>
-
+    
             <button type="submit">Відправити</button>
+    
         </form>
     </main>
 

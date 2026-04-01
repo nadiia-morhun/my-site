@@ -12,20 +12,56 @@ header {
     text-align: center;
 }
 
-nav {
+.navbar {
     background: #4d0000;
     padding: 10px;
-    text-align: center;
 }
 
-nav a {
+.menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    position: relative;
+}
+
+.menu a {
+    display: block;
+    padding: 10px 15px;
     color: white;
-    margin: 10px;
     text-decoration: none;
 }
 
-nav a:hover {
-    color: red;
+/* hover ефект */
+.menu a:hover {
+    background: #ff0000;
+    border-radius: 5px;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #330000;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    min-width: 150px;
+}
+
+.dropdown-menu li a {
+    padding: 10px;
+    display: block;
+}
+
+
+.dropdown:hover .dropdown-menu {
+    display: block;
 }
 
 main {
@@ -133,8 +169,17 @@ table {
     grid-column: 1 / -1;
 }
 
-@media (max-width: 600px) {
-    main {
-        grid-template-columns: 1fr;
-    }
+video,
+audio {
+    margin: 10px 0;
+    max-width: 100%;
+}
+
+article {
+    opacity: 0.6;
+    transition: 0.3s;
+}
+
+article:hover {
+    opacity: 1;
 }
