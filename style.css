@@ -1,4 +1,4 @@
-* * {
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -64,7 +64,6 @@ header {
 
 .dropdown-menu li a:hover {
     background: red;
-    border-radius: 5px;
 }
 
 .dropdown:hover .dropdown-menu,
@@ -75,17 +74,18 @@ header {
 main {
     display: grid;
     grid-template-columns: 3fr 1fr;
-    gap: 20px;
+    gap: 30px;
     padding: 20px;
 }
 
 article {
     background: #260000;
-    padding: 20px;
+    padding: 25px;
     border-radius: 10px;
     box-shadow: 0 0 15px red;
     opacity: 0.6;
     transition: 0.3s;
+    line-height: 1.6;
 }
 
 article:hover {
