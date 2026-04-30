@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Контактна форма котоблогу Боб і Блошка.">
-  <title>Форма — Боб і Блошка</title>
+  <meta name="description" content="Детальна сторінка про котів Боба і Блошку: характер, факти та порівняння з породами.">
+  <title>Наші коти — Боб і Блошка</title>
   <link rel="stylesheet" href="style.css">
   <script defer src="script.js"></script>
 </head>
@@ -16,8 +16,8 @@
       <div class="brand">
         <div class="brand__mark">🐾</div>
         <div>
-          <p class="brand__eyebrow">Зворотний зв'язок</p>
-          <h1 class="brand__title">Форма для котів</h1>
+          <p class="brand__eyebrow">Детальні профілі</p>
+          <h1 class="brand__title">Наші коти</h1>
         </div>
       </div>
       <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">
@@ -29,83 +29,83 @@
       <nav class="nav" id="primary-nav" aria-label="Основна навігація">
         <ul class="nav__list">
           <li class="nav__item"><a class="nav__link" href="index.html">Головна</a></li>
-          <li class="nav__item"><a class="nav__link" href="cats.html">Наші коти</a></li>
-          <li class="nav__item"><a class="nav__link nav__link--active" href="contact.html">Форма</a></li>
+          <li class="nav__item"><a class="nav__link nav__link--active" href="cats.html">Наші коти</a></li>
+          <li class="nav__item"><a class="nav__link" href="contact.html">Форма</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
-  <main id="main" class="container contact-layout">
-    <section class="panel contact-hero">
-      <div>
-        <p class="section-tag">Лабораторна робота: HTML5, CSS, Grid, медіа-запити, форма, JavaScript</p>
-        <h2 class="section-title">Напиши щось котам</h2>
-        <p>
-          Тут є всі потрібні поля: ім'я, email, телефон, дата й час, URL та повідомлення.
-          Форма працює як приклад валідації та інтерактивності на клієнтській стороні.
-        </p>
-      </div>
-      <aside class="contact-hero__aside">
-        <p>Підказка: обов'язкові поля позначені зірочкою.</p>
-      </aside>
+  <main id="main" class="container cats-layout">
+    <nav class="breadcrumbs panel" aria-label="Хлібні крихти">
+      <a href="index.html">Головна</a>
+      <span aria-hidden="true">→</span>
+      <span>Наші коти</span>
+    </nav>
+
+    <section class="cats-grid">
+      <article class="cat-card panel" id="bob">
+        <div class="cat-card__media">
+          <img src="images/bob.svg" alt="Ілюстрація кота Боба" class="cat-card__img">
+          <button class="chip fact-btn" type="button" data-facts='[
+            "Мейнкуни відомі великим розміром і пухнастим хвостом.",
+            "Ця порода часто спокійна, врівноважена й добре живе поруч із людьми.",
+            "Вони люблять бути поряд із родиною, але не завжди навязливі."
+          ]'>Ще факт про породу</button>
+        </div>
+        <div class="cat-card__body">
+          <h2 class="cat-card__title">Боб</h2>
+          <p class="cat-card__subtitle">Мейнкун • 2 роки</p>
+          <p>Спокійний, у міру агресивний, любить спати й іноді нагадує важливого охоронця дому.</p>
+          <div class="cat-card__block">
+            <h3>Кумедна історія</h3>
+            <p>Один раз Боб приніс чайний пакетик з мусорки та поклав його вранці в ліжко. Це виглядало як дуже серйозна котяча «взятка», щоб його нагодували.</p>
+          </div>
+          <div class="cat-card__block">
+            <h3>Чи збігається з породою?</h3>
+            <p>Так, у Боба відчувається мейнкунська гідність: він спокійний, впевнений і любить комфорт. Агресивність у нього помірна, що теж схоже на сильний характер породи.</p>
+          </div>
+        </div>
+      </article>
+
+      <article class="cat-card panel" id="bloshka">
+        <div class="cat-card__media">
+          <img src="images/bloshka.svg" alt="Ілюстрація кішки Блошки" class="cat-card__img">
+          <button class="chip fact-btn" type="button" data-facts='[
+            "Домашні безпородні коти часто дуже кмітливі й добре пристосовуються.",
+            "У них може бути сильний мисливський інстинкт і висока активність.",
+            "Вони нерідко привязуються до людини сильніше, ніж здається."
+          ]'>Ще факт про породу</button>
+        </div>
+        <div class="cat-card__body">
+          <h2 class="cat-card__title">Блошка</h2>
+          <p class="cat-card__subtitle">Дворняжка • 1 рік</p>
+          <p>Ласкава, шалено активна і неймовірно винахідлива. Якщо щось лежить не на місці — Блошка вже це «рятує».</p>
+          <div class="cat-card__block">
+            <h3>Кумедна історія</h3>
+            <p>Ви знайшли її в підвалі сусіднього будинку влітку 2025 року — і з того моменту вона перетворилася на енергійний домашній ураган.</p>
+          </div>
+          <div class="cat-card__block">
+            <h3>Чи збігається з породою?</h3>
+            <p>Так. Для безпородної кішки дуже типові кмітливість, адаптивність і жвавість. Її звичка тягнути речі з кухні та сушарки цілком у стилі маленького дослідника.</p>
+          </div>
+        </div>
+      </article>
     </section>
 
-    <section class="panel">
-      <form class="contact-form" id="contactForm" action="#" method="post" novalidate>
-        <div class="field">
-          <label for="name">Ім'я *</label>
-          <input id="name" name="name" type="text" required minlength="2" maxlength="50" placeholder="Наприклад, Олена">
-        </div>
-
-        <div class="field">
-          <label for="email">Email *</label>
-          <input id="email" name="email" type="email" required placeholder="name@example.com">
-        </div>
-
-        <div class="field">
-          <label for="phone">Телефон *</label>
-          <input id="phone" name="phone" type="tel" required pattern="^[+0-9 ()-]{10,20}$" placeholder="+380...">
-        </div>
-
-        <div class="field">
-          <label for="dateTime">Дата й час *</label>
-          <input id="dateTime" name="dateTime" type="datetime-local" required>
-        </div>
-
-        <div class="field">
-          <label for="website">Ваш сайт / профіль URL</label>
-          <input id="website" name="website" type="url" placeholder="https://...">
-        </div>
-
-        <div class="field">
-          <label for="cat">Кому пишете *</label>
-          <select id="cat" name="cat" required>
-            <option value="">Оберіть кота</option>
-            <option value="bob">Боб</option>
-            <option value="bloshka">Блошка</option>
-            <option value="both">Обом котам</option>
-          </select>
-        </div>
-
-        <div class="field field--full">
-          <label for="message">Повідомлення *</label>
-          <textarea id="message" name="message" required minlength="10" maxlength="500" rows="6" placeholder="Напишіть щось приємне або смішне..."></textarea>
-        </div>
-
-        <div class="form-actions field--full">
-          <button class="button" type="submit">Надіслати</button>
-          <p class="form-note">Після відправки з'явиться підтвердження прямо на сторінці.</p>
-        </div>
-      </form>
-      <div class="form-status" id="formStatus" role="status" aria-live="polite"></div>
+    <section class="panel facts-panel">
+      <h2 class="section-title">Підсумок</h2>
+      <p>
+        Боб більше схожий на спокійного аристократа, а Блошка — на енергійного авантюриста.
+        Разом вони виглядають як ідеальна котяча команда: один приносить тишу, інша — рух і хаос.
+      </p>
     </section>
   </main>
 
   <footer class="site-footer">
     <div class="container site-footer__inner">
-      <p>© 2026 • Контактна сторінка котоблогу</p>
-      <a href="index.html">На головну</a>
+      <p>© 2026 • Боб і Блошка</p>
+      <a href="contact.html">Перейти до форми</a>
     </div>
   </footer>
 </body>
