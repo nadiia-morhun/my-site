@@ -1,66 +1,112 @@
 <!DOCTYPE html>
 <html lang="uk">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Сайт про моїх котів">
-    <meta name="keywords" content="коти, мейнкун, домашні тварини">
-    <meta name="author" content="Твоє ім'я">
-    <title>Мої коти</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Контактна форма котоблогу Боб і Блошка.">
+  <title>Форма — Боб і Блошка</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
 </head>
-
 <body>
+  <a class="skip-link" href="#main">Перейти до вмісту</a>
 
-    <header>
-        <h1>🐾 Мої коти</h1>
-    </header>
+  <header class="site-header">
+    <div class="site-header__inner container">
+      <div class="brand">
+        <div class="brand__mark">🐾</div>
+        <div>
+          <p class="brand__eyebrow">Зворотний зв'язок</p>
+          <h1 class="brand__title">Форма для котів</h1>
+        </div>
+      </div>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">
+        <span class="nav-toggle__line"></span>
+        <span class="nav-toggle__line"></span>
+        <span class="nav-toggle__line"></span>
+        <span class="visually-hidden">Відкрити меню</span>
+      </button>
+      <nav class="nav" id="primary-nav" aria-label="Основна навігація">
+        <ul class="nav__list">
+          <li class="nav__item"><a class="nav__link" href="index.html">Головна</a></li>
+          <li class="nav__item"><a class="nav__link" href="cats.html">Наші коти</a></li>
+          <li class="nav__item"><a class="nav__link nav__link--active" href="contact.html">Форма</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-<nav class="navbar">
-    <ul class="menu">
-        <li><a href="index.html">Головна</a></li>
+  <main id="main" class="container contact-layout">
+    <section class="panel contact-hero">
+      <div>
+        <p class="section-tag">Лабораторна робота: HTML5, CSS, Grid, медіа-запити, форма, JavaScript</p>
+        <h2 class="section-title">Напиши щось котам</h2>
+        <p>
+          Тут є всі потрібні поля: ім'я, email, телефон, дата й час, URL та повідомлення.
+          Форма працює як приклад валідації та інтерактивності на клієнтській стороні.
+        </p>
+      </div>
+      <aside class="contact-hero__aside">
+        <p>Підказка: обов'язкові поля позначені зірочкою.</p>
+      </aside>
+    </section>
 
-        <li class="dropdown">
-            <a href="#">Коти ▾</a>
-            <ul class="dropdown-menu">
-                <li><a href="cats.html">Всі коти</a></li>
-                <li><a href="cats.html#bob">Боб</a></li>
-                <li><a href="cats.html#bloshka">Блошка</a></li>
-            </ul>
-        </li>
+    <section class="panel">
+      <form class="contact-form" id="contactForm" action="#" method="post" novalidate>
+        <div class="field">
+          <label for="name">Ім'я *</label>
+          <input id="name" name="name" type="text" required minlength="2" maxlength="50" placeholder="Наприклад, Олена">
+        </div>
 
-        <li><a href="contact.html">Контакти</a></li>
-    </ul>
-</nav>
+        <div class="field">
+          <label for="email">Email *</label>
+          <input id="email" name="email" type="email" required placeholder="name@example.com">
+        </div>
 
-    <main>
-        <section>
-            <h2>Про сайт</h2>
-            <p>Цей сайт присвячений моїм двом котам — Бобу і Блошці.</p>
-        </section>
+        <div class="field">
+          <label for="phone">Телефон *</label>
+          <input id="phone" name="phone" type="tel" required pattern="^[+0-9 ()-]{10,20}$" placeholder="+380...">
+        </div>
 
-        <section>
-            <h2>Знайомтесь</h2>
-            <ul>
-                <li><b>Боб</b> — Мейн-кун, спокійний, але іноді агресивний</li>
-                <li><b>Блошка</b> — маленька, але дуже активна та божевільна</li>
-            </ul>
-        </section>
+        <div class="field">
+          <label for="dateTime">Дата й час *</label>
+          <input id="dateTime" name="dateTime" type="datetime-local" required>
+        </div>
 
-        <aside>
-            <h3>Цікаві факти</h3>
-            <p>Довжина Боба складає 100 сантиметрів, з хвостом</p>
-            <p>Блошка дуже полюбляє дивитися в екран поки я щось кодую або монтую</p>
-            <p>Якщо ви будете кивати Бобу, то він почне робити те саме у відповідь</p>
-            <p>Блошка дуже полюбляє пакети. Якщо ви забули прибрати пакет, то можете попрощатися з ним</p>
-        </aside>
-    </main>
+        <div class="field">
+          <label for="website">Ваш сайт / профіль URL</label>
+          <input id="website" name="website" type="url" placeholder="https://...">
+        </div>
 
-    <footer>
-        <p>© 2026 Мої коти</p>
-    </footer>
+        <div class="field">
+          <label for="cat">Кому пишете *</label>
+          <select id="cat" name="cat" required>
+            <option value="">Оберіть кота</option>
+            <option value="bob">Боб</option>
+            <option value="bloshka">Блошка</option>
+            <option value="both">Обом котам</option>
+          </select>
+        </div>
 
+        <div class="field field--full">
+          <label for="message">Повідомлення *</label>
+          <textarea id="message" name="message" required minlength="10" maxlength="500" rows="6" placeholder="Напишіть щось приємне або смішне..."></textarea>
+        </div>
+
+        <div class="form-actions field--full">
+          <button class="button" type="submit">Надіслати</button>
+          <p class="form-note">Після відправки з'явиться підтвердження прямо на сторінці.</p>
+        </div>
+      </form>
+      <div class="form-status" id="formStatus" role="status" aria-live="polite"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container site-footer__inner">
+      <p>© 2026 • Контактна сторінка котоблогу</p>
+      <a href="index.html">На головну</a>
+    </div>
+  </footer>
 </body>
-
 </html>
