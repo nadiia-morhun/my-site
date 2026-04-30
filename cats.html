@@ -1,21 +1,172 @@
-<svg width="800" height="800" viewBox="0 0 800 800" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Ілюстрація Блошки">
-  <defs>
-    <linearGradient id="g2" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#8a1f33"/>
-      <stop offset="100%" stop-color="#130708"/>
-    </linearGradient>
-  </defs>
-  <rect width="800" height="800" rx="60" fill="url(#g2)"/>
-  <circle cx="400" cy="400" r="190" fill="#f1c8a8"/>
-  <path d="M245 265L150 155L260 195L315 250Z" fill="#f1c8a8"/>
-  <path d="M555 265L650 155L540 195L485 250Z" fill="#f1c8a8"/>
-  <ellipse cx="335" cy="390" rx="20" ry="28" fill="#1f1012"/>
-  <ellipse cx="465" cy="390" rx="20" ry="28" fill="#1f1012"/>
-  <path d="M340 470Q400 525 460 470" stroke="#1f1012" stroke-width="12" stroke-linecap="round" fill="none"/>
-  <path d="M385 425Q400 443 415 425" stroke="#1f1012" stroke-width="10" stroke-linecap="round" fill="none"/>
-  <path d="M245 340H145" stroke="#ffd8c0" stroke-width="8" stroke-linecap="round"/>
-  <path d="M250 370H138" stroke="#ffd8c0" stroke-width="8" stroke-linecap="round"/>
-  <path d="M555 340H655" stroke="#ffd8c0" stroke-width="8" stroke-linecap="round"/>
-  <path d="M550 370H662" stroke="#ffd8c0" stroke-width="8" stroke-linecap="round"/>
-  <text x="400" y="695" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="56" fill="#fff">Блошка</text>
-</svg>
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Коти</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>🐱 Мої коти</h1>
+    </header>
+
+<nav class="navbar">
+    <ul class="menu">
+        <li><a href="index.html">Головна</a></li>
+
+        <li class="dropdown">
+            <a href="#">Коти ▾</a>
+            <ul class="dropdown-menu">
+                <li><a href="cats.html">Всі коти</a></li>
+                <li><a href="cats.html#bob">Боб</a></li>
+                <li><a href="cats.html#bloshka">Блошка</a></li>
+            </ul>
+        </li>
+
+        <li><a href="contact.html">Контакти</a></li>
+    </ul>
+</nav>
+
+    <main>
+
+        <article id="bob">
+            <h2>Боб</h2>
+            <img src="images/bob.jpg" alt="Боб">
+            <p><b>Порода:</b> Мейн-кун</p>
+            <p><b>Вік:</b> 2 роки</p>
+            <p><b>Характер:</b> спокійний, іноді агресивний</p>
+            <p><b>Любить:</b> спати</p>
+
+            <h3>Цікава історія</h3>
+            <p>Приніс чайний пакетик з смітника як хабар</p>
+
+            <h3>Про породу</h3>
+            <ul>
+                <li>Мейн-куни великі та спокійні</li>
+                <li>Люблять людей</li>
+                <li>Часто розумні</li>
+            </ul>
+            <p>✔ Частково збігається з Бобом</p>
+        </article>
+
+<section class="gallery">
+    <h2>📸 Галерея Боба</h2>
+    <div class="gallery-grid">
+        <a href="images/bob1.jpg">
+        <img src="images/bob1.jpg">
+        </a>
+        <a href="images/bob2.jpg">
+            <img src="images/bob2.jpg">
+        </a>
+        <a href="images/bob3.jpg">
+            <img src="images/bob3.jpg">
+        </a>
+        <a href="images/bob4.jpg">
+            <img src="images/bob4.jpg">
+        </a>
+        <a href="images/bob5.jpg">
+            <img src="images/bob5.jpg">
+        </a>
+        <a href="images/bob6.jpg">
+            <img src="images/bob6.jpg">
+        </a>
+    </div>
+</section>
+
+        <article id="bloshka">
+            <h2>Блошка</h2>
+            <img src="images/boshka.jpg" alt="Блошка">
+            <p><b>Порода:</b> дворняжка</p>
+            <p><b>Вік:</b> 1 рік</p>
+            <p><b>Характер:</b> активна, лагідна, божевільна</p>
+            <p><b>Любить:</b> красти речі</p>
+
+            <h3>Цікава історія</h3>
+            <p>Краде пластикові ножі та бігає з ними по хаті</p>
+
+            <h3>Про породу</h3>
+            <ul>
+                <li>Дуже енергійні</li>
+                <li>Люблять гратися</li>
+                <li>Можуть шкодити</li>
+            </ul>
+            <p>✔ Повністю збігається з моєю кішкою</p>
+        </article>
+
+<section class="gallery">
+    <h2>📸 Галерея Блошки</h2>
+    <div class="gallery-grid">
+        <a href="images/bloshka1.jpg">
+            <img src="images/bloshka1.jpg">
+        </a>
+        <a href="images/bloshka2.jpg">
+            <img src="images/bloshka2.jpg">
+        </a>
+        <a href="images/bloshka3.jpg">
+            <img src="images/bloshka3.jpg">
+        </a>
+        <a href="images/bloshka4.jpg">
+            <img src="images/bloshka4.jpg">
+        </a>
+        <a href="images/bloshka5.jpg">
+            <img src="images/bloshka5.jpg">
+        </a>
+    </div>
+</section>
+
+<h2>Порівняння котів</h2>
+
+<table>
+    <tr>
+        <th>Кіт</th>
+        <th>Вік</th>
+        <th>Характер</th>
+        <th>Довжина</th>
+        <th>вага</th>
+    </tr>
+    <tr>
+        <td>Боб</td>
+        <td>2</td>
+        <td>Спокійний</td>
+        <td>100 см</td>
+        <td>7,5 кг </td>
+    </tr>
+    <tr>
+        <td>Блошка</td>
+        <td>1</td>
+        <td>Активна</td>
+        <td>70 см</td>
+        <td>3,5 кг</td>
+    </tr>
+</table>
+
+<section>
+    <h2>🎬 Відео та аудіо</h2>
+
+    <!-- Відео з елементами управління -->
+    <video controls width="600">
+        <source src="video/bobandbloshka.mp4" type="video/mp4">
+        Ваш браузер не підтримує відео.
+    </video>
+
+    <br><br>
+
+    <!-- Аудіо з елементами управління -->
+    <audio controls>
+        <source src="audio/myaukan-e-pesnya-koshek.mp3" type="audio/mpeg">
+        Ваш браузер не підтримує аудіо.
+    </audio>
+</section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 Мої коти</p>
+    </footer>
+
+</body>
+
+</html>

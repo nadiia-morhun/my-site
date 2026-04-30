@@ -1,112 +1,67 @@
 <!DOCTYPE html>
 <html lang="uk">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Детальна сторінка про котів Боба і Блошку: характер, факти та порівняння з породами.">
-  <title>Наші коти — Боб і Блошка</title>
-  <link rel="stylesheet" href="style.css">
-  <script defer src="script.js"></script>
+    <meta charset="UTF-8">
+    <title>Контакти</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  <a class="skip-link" href="#main">Перейти до вмісту</a>
 
-  <header class="site-header">
-    <div class="site-header__inner container">
-      <div class="brand">
-        <div class="brand__mark">🐾</div>
-        <div>
-          <p class="brand__eyebrow">Детальні профілі</p>
-          <h1 class="brand__title">Наші коти</h1>
-        </div>
-      </div>
-      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">
-        <span class="nav-toggle__line"></span>
-        <span class="nav-toggle__line"></span>
-        <span class="nav-toggle__line"></span>
-        <span class="visually-hidden">Відкрити меню</span>
-      </button>
-      <nav class="nav" id="primary-nav" aria-label="Основна навігація">
-        <ul class="nav__list">
-          <li class="nav__item"><a class="nav__link" href="index.html">Головна</a></li>
-          <li class="nav__item"><a class="nav__link nav__link--active" href="cats.html">Наші коти</a></li>
-          <li class="nav__item"><a class="nav__link" href="contact.html">Форма</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+    <header>
+        <h1>📩 Контакти</h1>
+    </header>
 
-  <main id="main" class="container cats-layout">
-    <nav class="breadcrumbs panel" aria-label="Хлібні крихти">
-      <a href="index.html">Головна</a>
-      <span aria-hidden="true">→</span>
-      <span>Наші коти</span>
-    </nav>
+<nav class="navbar">
+    <ul class="menu">
+        <li><a href="index.html">Головна</a></li>
 
-    <section class="cats-grid">
-      <article class="cat-card panel" id="bob">
-        <div class="cat-card__media">
-          <img src="images/bob.svg" alt="Ілюстрація кота Боба" class="cat-card__img">
-          <button class="chip fact-btn" type="button" data-facts='[
-            "Мейнкуни відомі великим розміром і пухнастим хвостом.",
-            "Ця порода часто спокійна, врівноважена й добре живе поруч із людьми.",
-            "Вони люблять бути поряд із родиною, але не завжди навязливі."
-          ]'>Ще факт про породу</button>
-        </div>
-        <div class="cat-card__body">
-          <h2 class="cat-card__title">Боб</h2>
-          <p class="cat-card__subtitle">Мейнкун • 2 роки</p>
-          <p>Спокійний, у міру агресивний, любить спати й іноді нагадує важливого охоронця дому.</p>
-          <div class="cat-card__block">
-            <h3>Кумедна історія</h3>
-            <p>Один раз Боб приніс чайний пакетик з мусорки та поклав його вранці в ліжко. Це виглядало як дуже серйозна котяча «взятка», щоб його нагодували.</p>
-          </div>
-          <div class="cat-card__block">
-            <h3>Чи збігається з породою?</h3>
-            <p>Так, у Боба відчувається мейнкунська гідність: він спокійний, впевнений і любить комфорт. Агресивність у нього помірна, що теж схоже на сильний характер породи.</p>
-          </div>
-        </div>
-      </article>
+        <li class="dropdown">
+            <a href="#">Коти ▾</a>
+            <ul class="dropdown-menu">
+                <li><a href="cats.html">Всі коти</a></li>
+                <li><a href="cats.html#bob">Боб</a></li>
+                <li><a href="cats.html#bloshka">Блошка</a></li>
+            </ul>
+        </li>
 
-      <article class="cat-card panel" id="bloshka">
-        <div class="cat-card__media">
-          <img src="images/bloshka.svg" alt="Ілюстрація кішки Блошки" class="cat-card__img">
-          <button class="chip fact-btn" type="button" data-facts='[
-            "Домашні безпородні коти часто дуже кмітливі й добре пристосовуються.",
-            "У них може бути сильний мисливський інстинкт і висока активність.",
-            "Вони нерідко привязуються до людини сильніше, ніж здається."
-          ]'>Ще факт про породу</button>
-        </div>
-        <div class="cat-card__body">
-          <h2 class="cat-card__title">Блошка</h2>
-          <p class="cat-card__subtitle">Дворняжка • 1 рік</p>
-          <p>Ласкава, шалено активна і неймовірно винахідлива. Якщо щось лежить не на місці — Блошка вже це «рятує».</p>
-          <div class="cat-card__block">
-            <h3>Кумедна історія</h3>
-            <p>Ви знайшли її в підвалі сусіднього будинку влітку 2025 року — і з того моменту вона перетворилася на енергійний домашній ураган.</p>
-          </div>
-          <div class="cat-card__block">
-            <h3>Чи збігається з породою?</h3>
-            <p>Так. Для безпородної кішки дуже типові кмітливість, адаптивність і жвавість. Її звичка тягнути речі з кухні та сушарки цілком у стилі маленького дослідника.</p>
-          </div>
-        </div>
-      </article>
-    </section>
+        <li><a href="contact.html">Контакти</a></li>
+    </ul>
+</nav>
 
-    <section class="panel facts-panel">
-      <h2 class="section-title">Підсумок</h2>
-      <p>
-        Боб більше схожий на спокійного аристократа, а Блошка — на енергійного авантюриста.
-        Разом вони виглядають як ідеальна котяча команда: один приносить тишу, інша — рух і хаос.
-      </p>
-    </section>
-  </main>
+    <main>
+        <h2>📩 Зв'язок</h2>
+    
+        <form>
+    
+            <label>Ім'я:</label>
+            <input type="text" required>
+    
+            <label>Email:</label>
+            <input type="email" required>
+    
+            <label>Телефон:</label>
+            <input type="tel" required pattern="[0-9+]{10,15}">
+    
+            <label>URL:</label>
+            <input type="url">
+    
+            <label>Дата і час:</label>
+            <input type="datetime-local">
+    
+            <label>Повідомлення:</label>
+            <textarea maxlength="300" required></textarea>
+    
+            <button type="submit">Відправити</button>
+    
+        </form>
+    </main>
 
-  <footer class="site-footer">
-    <div class="container site-footer__inner">
-      <p>© 2026 • Боб і Блошка</p>
-      <a href="contact.html">Перейти до форми</a>
-    </div>
-  </footer>
+    <footer>
+        <p>© 2026 Мої коти</p>
+    </footer>
+
 </body>
+
 </html>
