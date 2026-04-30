@@ -8,59 +8,56 @@
 </head>
 
 <body>
-
     <header>
         <h1>📩 Контакти</h1>
     </header>
 
-<nav class="nav">
-    <ul class="nav__list">
-        <li class="nav__item"><a href="index.html" class="nav__link">Головна</a></li>
+    <nav class="nav">
+        <ul class="nav__list">
+            <li class="nav__item"><a href="index.html" class="nav__link">Головна</a></li>
 
-        <li class="nav__item nav__item--dropdown">
-            <a href="#" class="nav__link">Коти ▾</a>
-            <ul class="nav__dropdown">
-                <li><a href="cats.html" class="nav__dropdown-link">Всі коти</a></li>
-                <li><a href="cats.html#bob" class="nav__dropdown-link">Боб</a></li>
-                <li><a href="cats.html#bloshka" class="nav__dropdown-link">Блошка</a></li>
-            </ul>
-        </li>
+            <li class="nav__item nav__item--dropdown">
+                <a href="#" class="nav__link">Коти ▾</a>
+                <ul class="nav__dropdown">
+                    <li><a href="cats.html" class="nav__dropdown-link">Всі коти</a></li>
+                    <li><a href="cats.html#bob" class="nav__dropdown-link">Боб</a></li>
+                    <li><a href="cats.html#bloshka" class="nav__dropdown-link">Блошка</a></li>
+                </ul>
+            </li>
 
-        <li class="nav__item"><a href="contact.html" class="nav__link">Контакти</a></li>
-    </ul>
-</nav>
+            <li class="nav__item"><a href="contact.html" class="nav__link">Контакти</a></li>
+        </ul>
+    </nav>
 
     <main>
         <h2>📩 Зв'язок</h2>
-    
-        <form>
-    
+
+        <form class="contact-form">
             <label>Ім'я:</label>
             <input type="text" required>
-    
+
             <label>Email:</label>
             <input type="email" required>
-    
+
             <label>Телефон:</label>
             <input type="tel" required pattern="[0-9+]{10,15}">
-    
-            <label>URL:</label>
-            <input type="url">
-    
-            <label>Дата і час:</label>
-            <input type="datetime-local">
-    
-            <label>Повідомлення:</label>
-            <textarea maxlength="300" required></textarea>
-    
+
+            <div class="checkbox-container">
+                <input type="checkbox" id="agree" class="custom-checkbox" required>
+                <label for="agree" class="checkbox-label">
+                    Я згоден на обробку кусей від Боба і Блошки
+                </label>
+            </div>
+
             <button type="submit">Відправити</button>
-    
         </form>
     </main>
 
     <footer>
         <p>© 2026 Мої коти</p>
     </footer>
+
+    <div class="floating-paw">🐾</div>
 
 </body>
 

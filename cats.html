@@ -8,30 +8,28 @@
 </head>
 
 <body>
-
     <header>
         <h1>🐱 Мої коти</h1>
     </header>
 
-<nav class="nav">
-    <ul class="nav__list">
-        <li class="nav__item"><a href="index.html" class="nav__link">Головна</a></li>
+    <nav class="nav">
+        <ul class="nav__list">
+            <li class="nav__item"><a href="index.html" class="nav__link">Головна</a></li>
 
-        <li class="nav__item nav__item--dropdown">
-            <a href="#" class="nav__link">Коти ▾</a>
-            <ul class="nav__dropdown">
-                <li><a href="cats.html" class="nav__dropdown-link">Всі коти</a></li>
-                <li><a href="cats.html#bob" class="nav__dropdown-link">Боб</a></li>
-                <li><a href="cats.html#bloshka" class="nav__dropdown-link">Блошка</a></li>
-            </ul>
-        </li>
+            <li class="nav__item nav__item--dropdown">
+                <a href="#" class="nav__link">Коти ▾</a>
+                <ul class="nav__dropdown">
+                    <li><a href="cats.html" class="nav__dropdown-link">Всі коти</a></li>
+                    <li><a href="cats.html#bob" class="nav__dropdown-link">Боб</a></li>
+                    <li><a href="cats.html#bloshka" class="nav__dropdown-link">Блошка</a></li>
+                </ul>
+            </li>
 
-        <li class="nav__item"><a href="contact.html" class="nav__link">Контакти</a></li>
-    </ul>
-</nav>
+            <li class="nav__item"><a href="contact.html" class="nav__link">Контакти</a></li>
+        </ul>
+    </nav>
 
     <main>
-
         <article id="bob">
             <h2>Боб</h2>
             <img src="images/bob.jpg" alt="Боб">
@@ -52,29 +50,17 @@
             <p>✔ Частково збігається з Бобом</p>
         </article>
 
-<section class="gallery">
-    <h2>📸 Галерея Боба</h2>
-    <div class="gallery-grid">
-        <a href="images/bob1.jpg">
-        <img src="images/bob1.jpg">
-        </a>
-        <a href="images/bob2.jpg">
-            <img src="images/bob2.jpg">
-        </a>
-        <a href="images/bob3.jpg">
-            <img src="images/bob3.jpg">
-        </a>
-        <a href="images/bob4.jpg">
-            <img src="images/bob4.jpg">
-        </a>
-        <a href="images/bob5.jpg">
-            <img src="images/bob5.jpg">
-        </a>
-        <a href="images/bob6.jpg">
-            <img src="images/bob6.jpg">
-        </a>
-    </div>
-</section>
+        <section class="gallery">
+            <h2>📸 Галерея Боба</h2>
+            <div class="gallery-grid">
+                <a href="images/bob1.jpg"><img src="images/bob1.jpg" alt="Боб 1"></a>
+                <a href="images/bob2.jpg"><img src="images/bob2.jpg" alt="Боб 2"></a>
+                <a href="images/bob3.jpg"><img src="images/bob3.jpg" alt="Боб 3"></a>
+                <a href="images/bob4.jpg"><img src="images/bob4.jpg" alt="Боб 4"></a>
+                <a href="images/bob5.jpg"><img src="images/bob5.jpg" alt="Боб 5"></a>
+                <a href="images/bob6.jpg"><img src="images/bob6.jpg" alt="Боб 6"></a>
+            </div>
+        </section>
 
         <article id="bloshka">
             <h2>Блошка</h2>
@@ -96,76 +82,62 @@
             <p>✔ Повністю збігається з моєю кішкою</p>
         </article>
 
-<section class="gallery">
-    <h2>📸 Галерея Блошки</h2>
-    <div class="gallery-grid">
-        <a href="images/bloshka1.jpg">
-            <img src="images/bloshka1.jpg">
-        </a>
-        <a href="images/bloshka2.jpg">
-            <img src="images/bloshka2.jpg">
-        </a>
-        <a href="images/bloshka3.jpg">
-            <img src="images/bloshka3.jpg">
-        </a>
-        <a href="images/bloshka4.jpg">
-            <img src="images/bloshka4.jpg">
-        </a>
-        <a href="images/bloshka5.jpg">
-            <img src="images/bloshka5.jpg">
-        </a>
-    </div>
-</section>
+        <section class="gallery">
+            <h2>📸 Галерея Блошки</h2>
+            <div class="gallery-grid">
+                <a href="images/bloshka1.jpg"><img src="images/bloshka1.jpg" alt="Блошка 1"></a>
+                <a href="images/bloshka2.jpg"><img src="images/bloshka2.jpg" alt="Блошка 2"></a>
+                <a href="images/bloshka3.jpg"><img src="images/bloshka3.jpg" alt="Блошка 3"></a>
+                <a href="images/bloshka4.jpg"><img src="images/bloshka4.jpg" alt="Блошка 4"></a>
+                <a href="images/bloshka5.jpg"><img src="images/bloshka5.jpg" alt="Блошка 5"></a>
+            </div>
+        </section>
 
-<h2>Порівняння котів</h2>
+        <h2 style="grid-column: 1 / -1;">Порівняння котів</h2>
 
-<table>
-    <tr>
-        <th>Кіт</th>
-        <th>Вік</th>
-        <th>Характер</th>
-        <th>Довжина</th>
-        <th>вага</th>
-    </tr>
-    <tr>
-        <td>Боб</td>
-        <td>2</td>
-        <td>Спокійний</td>
-        <td>100 см</td>
-        <td>7,5 кг </td>
-    </tr>
-    <tr>
-        <td>Блошка</td>
-        <td>1</td>
-        <td>Активна</td>
-        <td>70 см</td>
-        <td>3,5 кг</td>
-    </tr>
-</table>
+        <table>
+            <tr>
+                <th>Кіт</th>
+                <th>Вік</th>
+                <th>Характер</th>
+                <th>Довжина</th>
+                <th>Вага</th>
+            </tr>
+            <tr>
+                <td>Боб</td>
+                <td>2</td>
+                <td>Спокійний</td>
+                <td>100 см</td>
+                <td>7,5 кг </td>
+            </tr>
+            <tr>
+                <td>Блошка</td>
+                <td>1</td>
+                <td>Активна</td>
+                <td>70 см</td>
+                <td>3,5 кг</td>
+            </tr>
+        </table>
 
-<section>
-    <h2>🎬 Відео та аудіо</h2>
-
-    <!-- Відео з елементами управління -->
-    <video controls width="600">
-        <source src="video/bobandbloshka.mp4" type="video/mp4">
-        Ваш браузер не підтримує відео.
-    </video>
-
-    <br><br>
-
-    <!-- Аудіо з елементами управління -->
-    <audio controls>
-        <source src="audio/myaukan-e-pesnya-koshek.mp3" type="audio/mpeg">
-        Ваш браузер не підтримує аудіо.
-    </audio>
-</section>
-
+        <section style="grid-column: 1 / -1;">
+            <h2>🎬 Відео та аудіо</h2>
+            <video controls width="600">
+                <source src="video/bobandbloshka.mp4" type="video/mp4">
+                Ваш браузер не підтримує відео.
+            </video>
+            <br><br>
+            <audio controls>
+                <source src="audio/myaukan-e-pesnya-koshek.mp3" type="audio/mpeg">
+                Ваш браузер не підтримує аудіо.
+            </audio>
+        </section>
     </main>
 
     <footer>
         <p>© 2026 Мої коти</p>
     </footer>
+
+    <div class="floating-paw">🐾</div>
 
 </body>
 
